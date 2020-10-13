@@ -1,0 +1,119 @@
+.form
+  &__control
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border 0
+    border-bottom: 1px solid #aaa;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    outline none
+    transition all 0.2s linear
+    &.input__error
+      &:hover, &:focus
+        border-color: red;
+        box-shadow: none;
+    &:hover, &:focus
+      border-color: rgba(0,0,0, 0);
+      box-shadow: 0 2px 0 #1682d4;
+    &::-webkit-input-placeholder
+      color: #bdbdbd;
+      font-weight 500
+      font-size 16px
+    &::-moz-placeholder
+      color: #bdbdbd;
+      font-weight 500
+      font-size 16px
+    &:-ms-input-placeholder
+      color: #bdbdbd;
+      font-weight 500
+      font-size 16px
+    &:-moz-placeholder
+      color: #bdbdbd;
+      font-weight 500
+      font-size 16px
+
+
+.form__row
+  display flex
+
+.form__group
+  width 130px
+  position relative
+  &:first-of-type
+    margin-right 40px
+
+.label
+  position: absolute;
+  margin-top: -11px;
+  background: #ffffff;
+  color #1682d4
+  font-size: 14px;
+  font-weight 500
+
+.select__arrow
+  width 20px
+  height 20px
+  position absolute
+  right 0
+  top 50%
+  margin-top -8px
+  transition all 0.2s linear
+  &_expanded
+    transform rotate(180deg)
+
+.select
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.3;
+  padding: 16px 10px 10px 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border-left 0
+  border-right 0
+  border-top: 0
+  border-bottom: 1px solid #aaa;
+  box-shadow: none;
+  border-radius: 0;
+  appearance: none;
+  background: #fff;
+  background-repeat: no-repeat, repeat;
+  background-size: .65em auto, 100%;
+  width: 130px;
+  cursor pointer
+  transition all 0.2s linear
+.select::-ms-expand
+  display: none;
+
+/* Hover style */
+.select:hover
+  border-color: rgba(0,0,0, 0);
+  box-shadow: 0 2px 0 #1682d4;
+
+/* Focus style */
+.select:focus
+  border-color: #aaa;
+  /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+  box-shadow: none;
+  color: #222;
+  outline: none;
+
+/* Set options to normal weight */
+.select option
+  font-weight:normal;
+
+.select:disabled:hover, .select[aria-disabled=true]
+  border-color: #aaa;
+
+.input__error
+    border-color red
+.error__text
+  margin-bottom: 10px;
+  font-weight: 500;

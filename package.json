@@ -1,0 +1,47 @@
+{
+  "name": "currency",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/hash": "^0.8.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "serve": "concurrently --kill-others \"npm run start\" \"npm run dev\"",
+    "start": "node_modules/.bin/webpack-dev-server --open --host localhost --port 3000",
+    "dev": "node_modules/.bin/webpack -w --mode development",
+    "build": "node_modules/.bin/webpack --mode production",
+    "build-dev": "node_modules/.bin/webpack -w --mode development",
+    "build-none": "node_modules/.bin/webpack --mode none"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "classnames": "^2.2.6",
+    "concurrently": "5.0.2",
+    "css-loader": "^2.1.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.1.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
