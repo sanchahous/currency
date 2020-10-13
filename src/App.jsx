@@ -28,12 +28,14 @@ class App extends React.Component {
 
           <Switch>
             <Route
-                exact
                 path="/"
             >
               <CurrencyList />
             </Route>
-            <Route path="/currency-exchange">
+            <Route
+                exact
+                path="/currency-exchange"
+            >
               <CurrencyExchange />
             </Route>
           </Switch>
